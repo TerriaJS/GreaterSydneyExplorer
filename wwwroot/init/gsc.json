@@ -5,42 +5,66 @@
       "type": "group",
       "isOpen": "true",
       "items": [
-        {
-          "name": "Households",
-          "type": "csv",
-          "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
-          "tableStyle": {
-            "dataVariable": "Number of Households"
+        { "name": "Housing and Dwelling", "type": "group", "items": [
+          {
+            "name": "Household types",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_household_types_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Total Households"
+            },
+            "opacity": 0.9
           },
-          "opacity": 0.9
-        },
-        {
-          "name": "Implied dwellings",
-          "type": "csv",
-          "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_dwellings_lga?theme=all&location=syd&frequency=rt",
-          "tableStyle": {
-            "dataVariable": "Number of Implied Dwellings"
+          {
+            "name": "Implied dwellings",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_dwellings_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Implied Dwellings"
+            },
+            "opacity": 0.9
+          }
+        ] },
+        { "name": "General Population", "type": "group", "items": [
+          {
+            "name": "Households",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Households"
+            },
+            "opacity": 0.9
           },
-          "opacity": 0.9
-        },
-        {
-          "name": "Household types",
-          "type": "csv",
-          "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_household_types_lga?theme=all&location=syd&frequency=rt",
-          "tableStyle": {
-            "dataVariable": "Total Households"
+          {
+            "name": "Households",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Households"
+            },
+            "opacity": 0.9
           },
-          "opacity": 0.9
-        },
-        {
-          "name": "Employment",
-          "type": "csv",
-          "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/employment/rawdata/geo_workforce_lga?theme=all&location=syd&frequency=rt",
-          "tableStyle": {
-            "dataVariable": "Total (All Industries)"
-          },
-          "opacity": 0.9
-        }
+          {
+            "name": "Population",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_population_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Total Population"
+            },
+            "opacity": 0.9
+          }
+        ] },
+        { "name": "Working & Employment", "type": "group", "items": [
+          {
+            "name": "Employment",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/employment/rawdata/geo_workforce_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Total (All Industries)"
+            },
+            "opacity": 0.9
+          }
+        ] }
       ]
     }
   ],
