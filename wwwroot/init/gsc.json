@@ -1,11 +1,11 @@
 {
   "catalog": [ 
     {
-      "name": "Greater Sydney Commission",
+      "name": "Greater Sydney Authority",
       "type": "group",
       "isOpen": "true",
       "items": [
-        { "name": "Housing and Dwelling", "type": "group", "items": [
+        { "name": "Housing and Dwelling", "type": "group", "isOpen": "true", "items": [
           {
             "name": "Household types",
             "type": "csv",
@@ -25,7 +25,7 @@
             "opacity": 0.9
           }
         ] },
-        { "name": "General Population", "type": "group", "items": [
+        { "name": "General Population", "type": "group", "isOpen": "true", "items": [
           {
             "name": "Households",
             "type": "csv",
@@ -54,7 +54,7 @@
             "opacity": 0.9
           }
         ] },
-        { "name": "Working & Employment", "type": "group", "items": [
+        { "name": "Working & Employment", "type": "group", "isOpen": "true", "items": [
           {
             "name": "Employment",
             "type": "csv",
