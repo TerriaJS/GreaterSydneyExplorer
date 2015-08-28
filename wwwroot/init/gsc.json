@@ -5,7 +5,82 @@
       "type": "group",
       "isOpen": "true",
       "items": [
-        { "name": "Housing and Dwelling", "type": "group", "isOpen": "true", "items": [
+        { "name": "General Population", "type": "group", "isOpen": "true", "items": [
+          {
+            "name": "Population",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_population_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Total Population"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Population by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_population_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Households"
+            },
+            "opacity": 0.9
+          },            
+          {
+            "name": "Households",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Households"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Households by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Households"
+            },
+            "opacity": 0.9
+          }
+        ] },
+        { "name": "Housing and Development", "type": "group", "isOpen": "true", "items": [
+          {
+            "name": "Implied dwellings",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_dwellings_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Implied Dwellings"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Implied dwellings by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_dwellings_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Number of Implied Dwellings"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "New Dwelling Completions",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_completions_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Net Dwelling Completions"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "New Dwelling Completions by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_completions_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Net Dwelling Completions"
+            },
+            "opacity": 0.9
+          },
+
           {
             "name": "Household types",
             "type": "csv",
@@ -16,51 +91,99 @@
             "opacity": 0.9
           },
           {
-            "name": "Implied dwellings",
+            "name": "Household types by subregion",
             "type": "csv",
-            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_dwellings_lga?theme=all&location=syd&frequency=rt",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/completions/rawdata/geo_household_types_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
-              "dataVariable": "Number of Implied Dwellings"
-            },
-            "opacity": 0.9
-          }
-        ] },
-        { "name": "General Population", "type": "group", "isOpen": "true", "items": [
-          {
-            "name": "Households",
-            "type": "csv",
-            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
-            "tableStyle": {
-              "dataVariable": "Number of Households"
+              "dataVariable": "Total Households"
             },
             "opacity": 0.9
           },
           {
-            "name": "Households",
+            "name": "Approvals of Local DAs",
             "type": "csv",
-            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_household_lga?theme=all&location=syd&frequency=rt",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_approvals_lga?theme=all&location=syd&frequency=rt",
             "tableStyle": {
-              "dataVariable": "Number of Households"
+              "dataVariable": "Number of DA Approvals"
             },
             "opacity": 0.9
           },
           {
-            "name": "Population",
+            "name": "Approvals of Local DAs by subregion",
             "type": "csv",
-            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_population_lga?theme=all&location=syd&frequency=rt",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_approvals_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
-              "dataVariable": "Total Population"
+              "dataVariable": "Number of DA Approvals"
             },
             "opacity": 0.9
           }
         ] },
         { "name": "Working & Employment", "type": "group", "isOpen": "true", "items": [
           {
-            "name": "Employment",
+            "name": "Size of Workforce by Industry",
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/employment/rawdata/geo_workforce_lga?theme=all&location=syd&frequency=rt",
             "tableStyle": {
               "dataVariable": "Total (All Industries)"
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Size of Workforce by Industry by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/employment/rawdata/geo_workforce_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+              "dataVariable": "Total (All Industries)"
+            },
+            "opacity": 0.9
+          }
+        ] },
+        { "name": "Sustainability & Resilient Communities", "type": "group", "isOpen": "true", "items": [
+          {
+            "name": "Walkability",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/jtw/rawdata/geo_walkability_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Walkability by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/jtw/rawdata/geo_walkability_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "CO₂ Savings",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_energy_savings_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "CO₂ Savings by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_energy_savings_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Water Savings",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_water_savings_lga?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
+            },
+            "opacity": 0.9
+          },
+          {
+            "name": "Water Savings by subregion",
+            "type": "csv",
+            "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_water_savings_subregion?theme=all&location=syd&frequency=rt",
+            "tableStyle": {
             },
             "opacity": 0.9
           }
