@@ -20,7 +20,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/population/rawdata/geo_population_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
-              "dataVariable": "Number of Households"
+              "dataVariable": "Total Population"
             },
             "opacity": 0.9
           },            
@@ -144,6 +144,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/jtw/rawdata/geo_walkability_lga?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Avg walking trips per person per day"
             },
             "opacity": 0.9
           },
@@ -152,6 +153,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/jtw/rawdata/geo_walkability_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Avg walking trips per person per day"
             },
             "opacity": 0.9
           },
@@ -160,6 +162,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_energy_savings_lga?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Average energy savings per day per new dwelling (kg CO2)"
             },
             "opacity": 0.9
           },
@@ -168,6 +171,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_energy_savings_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Average energy savings per day per new dwelling (kg CO2)"
             },
             "opacity": 0.9
           },
@@ -176,6 +180,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_water_savings_lga?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Average water savings per day per new dwelling (litres)"
             },
             "opacity": 0.9
           },
@@ -184,6 +189,7 @@
             "type": "csv",
             "url": "https://nsw-dashboard.research.nicta.com.au/gsc/dev/api/widgets/da_approvals/rawdata/geo_water_savings_subregion?theme=all&location=syd&frequency=rt",
             "tableStyle": {
+              "dataVariable": "Average water savings per day per new dwelling (litres)"
             },
             "opacity": 0.9
           }
