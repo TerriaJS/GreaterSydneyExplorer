@@ -164,7 +164,7 @@ terria.start({
         container: ui,
         elements: [
             //'<a target="_blank" href="about.html"><img src="images/NationalMap_Logo_RGB72dpi_REV_Blue text_BETA.png" height="50" alt="National Map" title="Version: ' + version + '" /></a>',
-            '<span class="brand-bar-name">Greater Sydney Authority</span>',
+            '<span class="brand-bar-name">Greater Commission</span>',
             ''
         ]
     });
