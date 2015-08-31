@@ -193,7 +193,25 @@
             },
             "opacity": 0.9
           }
-        ] }
+        ] },
+        { "name": "Land zoning", "type": "group", "items": [
+          {
+            "name":"SRLUP Future Residential Growth Area",
+            "type": "geojson",
+            "url": "data/gsc/SRLUP_Future_Residential_Growth_Area.geojson"
+          },
+          {
+            "name":"Urban Release Areas",
+            "type": "geojson",
+            "url": "data/gsc/Urban_Release_Areas.geojson"
+          },
+          {
+            "name": "SILEP Local Environmental Plans",
+            "type": "open-street-map",
+            "url": "http://guru.cycletour.org/tile/GSC_Land_Zoning",
+            "opacity": 0.9
+          }
+        ]}
       ]
     }
   ],
